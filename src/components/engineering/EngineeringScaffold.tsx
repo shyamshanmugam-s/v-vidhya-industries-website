@@ -69,43 +69,61 @@ export const EngineeringScaffold: React.FC = () => {
 
     const ctx = gsap.context(() => {
       // Header Animation
-      gsap.from(headerRef.current, {
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
-        },
-        opacity: 0,
-        y: 28,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 28 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 85%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // Main Split Block Animation
-      gsap.from(heroBlockRef.current, {
-        scrollTrigger: {
-          trigger: heroBlockRef.current,
-          start: "top 80%",
-        },
-        opacity: 0,
-        y: 35,
-        duration: 0.9,
-        ease: "power4.out",
-      });
+      gsap.fromTo(
+        heroBlockRef.current,
+        { opacity: 0, y: 35 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: heroBlockRef.current,
+            start: "top 80%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // 4-Stage Cards Stagger
       const stageCards = stagesRef.current?.querySelectorAll(".engineering-stage-card");
       if (stageCards && stageCards.length > 0) {
-        gsap.from(stageCards, {
-          scrollTrigger: {
-            trigger: stagesRef.current,
-            start: "top 80%",
-          },
-          opacity: 0,
-          y: 30,
-          stagger: 0.12,
-          duration: 0.8,
-          ease: "power3.out",
-        });
+        gsap.fromTo(
+          stageCards,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.12,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: stagesRef.current,
+              start: "top 80%",
+              once: true,
+            },
+            clearProps: "opacity,transform",
+          }
+        );
       }
     }, sectionRef);
 

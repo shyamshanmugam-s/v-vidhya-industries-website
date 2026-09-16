@@ -57,43 +57,61 @@ export const CompanyScaffold: React.FC = () => {
 
     const ctx = gsap.context(() => {
       // Header reveal
-      gsap.from(headerRef.current, {
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
-        },
-        opacity: 0,
-        y: 28,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 28 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 85%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // Split dossier reveal
-      gsap.from(splitRef.current, {
-        scrollTrigger: {
-          trigger: splitRef.current,
-          start: "top 80%",
-        },
-        opacity: 0,
-        y: 35,
-        duration: 0.9,
-        ease: "power4.out",
-      });
+      gsap.fromTo(
+        splitRef.current,
+        { opacity: 0, y: 35 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: splitRef.current,
+            start: "top 80%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // Trust strip cards reveal
       const cards = trustRef.current?.querySelectorAll(".trust-signal-card");
       if (cards && cards.length > 0) {
-        gsap.from(cards, {
-          scrollTrigger: {
-            trigger: trustRef.current,
-            start: "top 80%",
-          },
-          opacity: 0,
-          y: 25,
-          stagger: 0.1,
-          duration: 0.8,
-          ease: "power3.out",
-        });
+        gsap.fromTo(
+          cards,
+          { opacity: 0, y: 25 },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: trustRef.current,
+              start: "top 80%",
+              once: true,
+            },
+            clearProps: "opacity,transform",
+          }
+        );
       }
     }, sectionRef);
 

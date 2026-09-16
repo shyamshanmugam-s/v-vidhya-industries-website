@@ -77,36 +77,49 @@ export const ProductSystemsScaffold: React.FC = () => {
 
     const ctx = gsap.context(() => {
       // Header Animation
-      gsap.from(headerRef.current, {
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 85%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // Cards staggered reveal
       const cards = gridRef.current?.querySelectorAll(".product-catalogue-panel");
       if (cards && cards.length > 0) {
-        gsap.from(cards, {
-          scrollTrigger: {
-            trigger: gridRef.current,
-            start: "top 80%",
-          },
-          opacity: 0,
-          y: 40,
-          stagger: 0.12,
-          duration: 0.9,
-          ease: "power4.out",
-        });
+        gsap.fromTo(
+          cards,
+          { opacity: 0, y: 35 },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: gridRef.current,
+              start: "top 85%",
+              once: true,
+            },
+            clearProps: "opacity,transform",
+          }
+        );
       }
     }, sectionRef);
 
     return () => ctx.revert();
   }, []);
+
 
   const handleQuoteClick = (_productName: string) => {
     setSelectedProduct(null);

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { initLenis } from "./lib/lenis";
-import { initGsapScrollTrigger } from "./lib/gsap";
+import { initGsapScrollTrigger, ScrollTrigger } from "./lib/gsap";
 import { Navbar } from "./components/navigation/Navbar";
 import { HeroShell } from "./components/hero/HeroShell";
 import { ProductSystemsScaffold } from "./components/products/ProductSystemsScaffold";
@@ -18,7 +18,23 @@ export default function App() {
     initLenis();
     // Synchronize GSAP ScrollTrigger with Lenis
     initGsapScrollTrigger();
+
+    // Refresh ScrollTrigger once the DOM layout is stable
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 150);
+
+    const handleLoad = () => {
+      ScrollTrigger.refresh();
+    };
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
+
 
   return (
     <div className="min-h-screen bg-graphite-950 text-steel-200 font-sans selection:bg-precision-cyan/20 selection:text-white flex flex-col">

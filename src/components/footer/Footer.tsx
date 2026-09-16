@@ -12,16 +12,22 @@ export const Footer: React.FC = () => {
     if (prefersReducedMotion) return;
 
     const ctx = gsap.context(() => {
-      gsap.from(contentRef.current, {
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top 90%",
-        },
-        opacity: 0,
-        y: 24,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        contentRef.current,
+        { opacity: 0, y: 24 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: footerRef.current,
+            start: "top 90%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
     }, footerRef);
 
     return () => ctx.revert();

@@ -87,40 +87,58 @@ export const QuoteScaffold: React.FC = () => {
 
     const ctx = gsap.context(() => {
       // Header reveal
-      gsap.from(headerRef.current, {
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
-        },
-        opacity: 0,
-        y: 28,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 28 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 85%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // Left Column reveal
-      gsap.from(leftColRef.current, {
-        scrollTrigger: {
-          trigger: leftColRef.current,
-          start: "top 80%",
-        },
-        opacity: 0,
-        y: 32,
-        duration: 0.9,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        leftColRef.current,
+        { opacity: 0, y: 32 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: leftColRef.current,
+            start: "top 80%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
       // Form Card reveal
-      gsap.from(formCardRef.current, {
-        scrollTrigger: {
-          trigger: formCardRef.current,
-          start: "top 80%",
-        },
-        opacity: 0,
-        y: 36,
-        duration: 0.9,
-        ease: "power4.out",
-      });
+      gsap.fromTo(
+        formCardRef.current,
+        { opacity: 0, y: 36 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: formCardRef.current,
+            start: "top 80%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
     }, sectionRef);
 
     return () => ctx.revert();

@@ -22,16 +22,10 @@ export function initLenis(): Lenis {
     smoothWheel: true,
   });
 
-  function raf(time: number) {
-    lenisInstance?.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-
   return lenisInstance;
 }
 
 export function getLenis(): Lenis | null {
   return lenisInstance;
 }
+

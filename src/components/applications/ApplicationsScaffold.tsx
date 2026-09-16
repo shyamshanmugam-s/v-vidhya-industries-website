@@ -115,39 +115,57 @@ export const ApplicationsScaffold: React.FC = () => {
     if (prefersReducedMotion) return;
 
     const ctx = gsap.context(() => {
-      gsap.from(headerRef.current, {
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 85%",
-        },
-        opacity: 0,
-        y: 28,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        headerRef.current,
+        { opacity: 0, y: 28 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headerRef.current,
+            start: "top 85%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
-      gsap.from(".application-row-item", {
-        scrollTrigger: {
-          trigger: ".application-list-container",
-          start: "top 80%",
-        },
-        opacity: 0,
-        x: 20,
-        stagger: 0.08,
-        duration: 0.7,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        ".application-row-item",
+        { opacity: 0, x: 20 },
+        {
+          opacity: 1,
+          x: 0,
+          stagger: 0.08,
+          duration: 0.7,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".application-list-container",
+            start: "top 80%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
 
-      gsap.from(visualCardRef.current, {
-        scrollTrigger: {
-          trigger: visualCardRef.current,
-          start: "top 80%",
-        },
-        opacity: 0,
-        scale: 0.98,
-        duration: 0.9,
-        ease: "power4.out",
-      });
+      gsap.fromTo(
+        visualCardRef.current,
+        { opacity: 0, scale: 0.98 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.9,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: visualCardRef.current,
+            start: "top 80%",
+            once: true,
+          },
+          clearProps: "opacity,transform",
+        }
+      );
     }, sectionRef);
 
     return () => ctx.revert();

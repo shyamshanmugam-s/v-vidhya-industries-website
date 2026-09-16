@@ -122,7 +122,7 @@ export const PumpFinderScaffold: React.FC = () => {
       id="pump-finder"
       ref={sectionRef}
       className="relative py-12 sm:py-16 border-b border-graphite-800 bg-graphite-950 technical-grid"
-      aria-label="V. Vidhya Industries Pump Application Selector"
+      aria-label="ForgeFlow Interactive Pump Selector Demo"
     >
       {/* Background Ambience */}
       <div
@@ -140,7 +140,7 @@ export const PumpFinderScaffold: React.FC = () => {
               </span>
               <span className="text-graphite-800">/</span>
               <span className="font-mono text-xs text-steel-500 tracking-widest uppercase">
-                FIND YOUR PUMP
+                APPLICATION SELECTOR
               </span>
             </div>
 
@@ -152,16 +152,16 @@ export const PumpFinderScaffold: React.FC = () => {
             </h2>
 
             <p className="text-base sm:text-lg text-steel-300 font-sans max-w-xl leading-relaxed">
-              Start with your application and requirements. We'll guide you toward the relevant V. Vidhya Industries pump systems.
+              Sample product-selection experience demonstrating guided filtering, application mapping and enquiry prefill.
             </p>
           </div>
 
           <div className="flex flex-col items-start md:items-end gap-2 self-start md:self-auto">
             <Badge variant="outline" className="text-[11px] font-mono">
-              APPLICATION SELECTOR
+              INTERACTIVE DEMO
             </Badge>
-            <span className="font-mono text-[10px] text-steel-500">
-              3-STEP APPLICATION MATRIX
+            <span className="font-mono text-[10px] text-steel-500 uppercase">
+              SAMPLE SELECTION MATRIX
             </span>
           </div>
         </div>

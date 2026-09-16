@@ -8,21 +8,21 @@ import engineeringWorkshopImg from "../../assets/engineering-manufacturing.jpg";
 const engineeringMetrics = [
   {
     index: "01",
-    metric: "30+ YEARS",
-    label: "ENGINEERING EXPERIENCE",
-    desc: "Established manufacturing domain knowledge in Coimbatore pump engineering.",
+    metric: "HYDRAULIC",
+    label: "FLOW ARCHITECTURE",
+    desc: "Structured engineering workflows for fluid dynamics and flow performance.",
   },
   {
     index: "02",
-    metric: "30,000 SQ FT",
-    label: "FACILITY",
-    desc: "Dedicated workshop infrastructure for component machining and assembly.",
+    metric: "PRECISION",
+    label: "MACHINING STANDARDS",
+    desc: "Demonstrating how component tolerances and casting standards can be presented.",
   },
   {
     index: "03",
     metric: "R&D",
-    label: "PRODUCT DEVELOPMENT",
-    desc: "Application-focused hydraulic development and continuous tooling refinement.",
+    label: "SYSTEM INTEGRATION",
+    desc: "Showcasing product development cycles and testing verification protocols.",
   },
 ];
 
@@ -142,7 +142,7 @@ export const EngineeringScaffold: React.FC = () => {
       id="engineering"
       ref={sectionRef}
       className="relative py-12 sm:py-16 border-b border-graphite-800 bg-graphite-950 technical-grid"
-      aria-label="V. Vidhya Industries Engineering and Manufacturing"
+      aria-label="ForgeFlow Engineering-Led Digital Experiences"
     >
       {/* Background Radial Light */}
       <div
@@ -166,23 +166,23 @@ export const EngineeringScaffold: React.FC = () => {
             </div>
 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white uppercase leading-[1.02] mb-4">
-              ENGINEERING & <br />
+              ENGINEERING-LED <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-steel-200 to-steel-400">
-                MANUFACTURING.
+                DIGITAL EXPERIENCES.
               </span>
             </h2>
 
             <p className="text-base sm:text-lg text-steel-300 font-sans leading-relaxed">
-              Engineering, manufacturing and product development form the foundation of V. Vidhya Industries' pumping systems.
+              Demonstrating how industrial manufacturers can showcase engineering depth, manufacturing capability, and technical precision online.
             </p>
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-2 self-start lg:self-auto">
             <Badge variant="accent" indicator className="py-1 px-3 text-[11px] font-mono">
-              MANUFACTURING & PRODUCT DEVELOPMENT
+              ENGINEERING STORYTELLING
             </Badge>
             <span className="font-mono text-[10px] text-steel-500">
-              COIMBATORE, TAMIL NADU
+              SAMPLE CAPABILITY MODULE
             </span>
           </div>
         </div>
@@ -195,17 +195,17 @@ export const EngineeringScaffold: React.FC = () => {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 font-mono text-xs text-precision-cyan uppercase tracking-widest">
                 <Layers className="w-4 h-4" />
-                <span>MANUFACTURING HERITAGE</span>
+                <span>TECHNICAL CAPABILITY</span>
               </div>
 
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white uppercase tracking-tight leading-[1.05]">
-                THREE DECADES <br />
-                OF ENGINEERING <br />
-                <span className="text-steel-400">EXPERIENCE.</span>
+                PRECISION <br />
+                ENGINEERING <br />
+                <span className="text-steel-400">STORYTELLING.</span>
               </h3>
 
               <p className="text-base sm:text-lg text-steel-300 font-sans leading-relaxed">
-                V. Vidhya Industries develops and manufactures pumping systems for domestic, agricultural and water-handling applications.
+                ForgeFlow showcases how complex industrial equipment and engineering expertise can be structured into clear, engaging digital presentations for technical buyers.
               </p>
             </div>
 
@@ -234,7 +234,7 @@ export const EngineeringScaffold: React.FC = () => {
 
               {/* Discreet Demonstration Notice */}
               <p className="text-[11px] font-mono text-steel-500 leading-relaxed pt-2">
-                * Company information shown for demonstration and should be confirmed with V. Vidhya Industries before final publication.
+                * Conceptual engineering content presented for website demonstration purposes.
               </p>
             </div>
           </div>
@@ -248,17 +248,17 @@ export const EngineeringScaffold: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-precision-cyan" />
                   <span className="text-steel-300 uppercase tracking-wider">
-                    PUMP COMPONENT ASSEMBLY
+                    SAMPLE COMPONENT ASSEMBLY
                   </span>
                 </div>
-                <span className="text-steel-600 hidden sm:inline">COIMBATORE WORKSHOP</span>
+                <span className="text-steel-600 hidden sm:inline">DEMO WORKSHOP VISUAL</span>
               </div>
 
               {/* Image Container */}
               <div className="relative aspect-[4/3] sm:aspect-[16/11] w-full bg-graphite-950 overflow-hidden">
                 <img
                   src={engineeringWorkshopImg}
-                  alt="Industrial pump components and casing on workshop workbench"
+                  alt="Sample industrial equipment components on workshop workbench"
                   className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   loading="eager"
                   decoding="async"
@@ -272,8 +272,8 @@ export const EngineeringScaffold: React.FC = () => {
 
               {/* Footer status bar */}
               <div className="px-4 py-2.5 bg-graphite-950/95 border-t border-graphite-800/90 flex items-center justify-between font-mono text-[11px]">
-                <span className="text-steel-400 text-xs">PUMP HARDWARE & SUBASSEMBLIES</span>
-                <span className="text-[10px] text-precision-cyan">PUMP MANUFACTURING // COIMBATORE</span>
+                <span className="text-steel-400 text-xs">HARDWARE & SUBASSEMBLIES</span>
+                <span className="text-[10px] text-precision-cyan">FORGEFLOW // ENGINEERING DEMO</span>
               </div>
             </div>
           </div>
@@ -327,7 +327,7 @@ export const EngineeringScaffold: React.FC = () => {
                   </div>
 
                   <div className="pt-4 border-t border-graphite-850 mt-6 font-mono text-[10px] text-steel-500 uppercase tracking-widest">
-                    V. VIDHYA ENGINEERING
+                    FORGEFLOW ENGINEERING // DEMO ARCHITECTURE
                   </div>
                 </div>
               );
@@ -346,7 +346,7 @@ export const EngineeringScaffold: React.FC = () => {
                 REPRESENTATIVE PUMP GEOMETRY
               </h4>
               <p className="text-[11px] font-mono text-steel-500 mt-1">
-                Illustrative technical visual — not a product specification.
+                Illustrative technical visual — sample concept schematic.
               </p>
             </div>
 
@@ -354,7 +354,7 @@ export const EngineeringScaffold: React.FC = () => {
               onClick={scrollToQuote}
               className="inline-flex items-center gap-2 text-xs font-mono text-precision-cyan hover:text-white transition-colors self-start sm:self-auto py-2 focus-visible:outline-2 focus-visible:outline-precision-cyan"
             >
-              <span>DISCUSS ENGINEERING REQUIREMENTS</span>
+              <span>EXPLORE DEMO RFQ</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
           </div>

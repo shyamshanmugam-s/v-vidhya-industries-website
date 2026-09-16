@@ -3,44 +3,41 @@ import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
 import {
   ArrowUpRight,
-  Building2,
   Compass,
   Cpu,
-  Mail,
-  MapPin,
-  Phone,
+  Layers,
   ShieldCheck,
-  Wrench,
+  Sparkles,
 } from "lucide-react";
 import { gsap } from "../../lib/gsap";
 
-const companyMetadata = [
-  { index: "01", label: "ENTITY", value: "V. VIDHYA INDUSTRIES" },
-  { index: "02", label: "MANUFACTURING BASE", value: "COIMBATORE, TAMIL NADU" },
-  { index: "03", label: "EXPERIENCE", value: "30+ YEARS ENGINEERING EXPERIENCE" },
-  { index: "04", label: "INFRASTRUCTURE", value: "30,000 SQ FT FACILITY" },
+const conceptMetadata = [
+  { index: "01", label: "CONCEPT TYPE", value: "INDUSTRIAL DIGITAL SHOWCASE" },
+  { index: "02", label: "ARCHITECTURE", value: "REACT + TYPESCRIPT + VITE" },
+  { index: "03", label: "CAPABILITIES", value: "CATALOGUE, FINDER & RFQ FLOW" },
+  { index: "04", label: "DESIGN SYSTEM", value: "PRECISION GRAPHITE UI" },
 ];
 
-const trustSignals = [
+const conceptPillars = [
   {
     index: "01",
-    tag: "ENGINEERING",
-    title: "30+ YEARS OF ENGINEERING EXPERIENCE",
-    desc: "Decades of focused pump manufacturing and component precision in South India's industrial heartland.",
-    icon: Wrench,
+    tag: "CATALOGUE",
+    title: "STRUCTURED PRODUCT ARCHITECTURE",
+    desc: "Multi-family industrial product catalogues with high-density technical cards, modal views, and application categorization.",
+    icon: Layers,
   },
   {
     index: "02",
-    tag: "FACILITY",
-    title: "30,000 SQ FT FACILITY",
-    desc: "Established physical workshop premises dedicated to casting, machining, winding, and assembly.",
-    icon: Building2,
+    tag: "SELECTOR",
+    title: "INTERACTIVE PRODUCT FINDER",
+    desc: "Guided multi-step decision engine translating operational requirements into tailored product family recommendations.",
+    icon: Compass,
   },
   {
     index: "03",
-    tag: "R&D",
-    title: "PRODUCT DEVELOPMENT INFRASTRUCTURE",
-    desc: "Continuous hydraulic topology refinement and application-focused testing protocols.",
+    tag: "LEAD GEN",
+    title: "HIGH-CONVERSION RFQ ENGINE",
+    desc: "Engineered commercial enquiry flow with spec prefill, document attachment, and validation designed for technical buyers.",
     icon: Cpu,
   },
 ];
@@ -125,12 +122,19 @@ export const CompanyScaffold: React.FC = () => {
     }
   };
 
+  const scrollToProducts = () => {
+    const el = document.getElementById("products");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="company"
       ref={sectionRef}
       className="relative py-12 sm:py-16 border-b border-graphite-800 bg-graphite-950 technical-grid"
-      aria-label="About V. Vidhya Industries"
+      aria-label="About the ForgeFlow Concept"
     >
       {/* Background Ambience */}
       <div
@@ -149,29 +153,28 @@ export const CompanyScaffold: React.FC = () => {
               </span>
               <span className="text-graphite-800">/</span>
               <span className="font-mono text-xs text-steel-500 tracking-widest uppercase">
-                COMPANY
+                ABOUT THE CONCEPT
               </span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white uppercase leading-[1.02] mb-4">
-              ENGINEERING <br />
-              WITH ROOTS IN <br />
+              BUILT FOR <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-steel-200 to-steel-400">
-                COIMBATORE.
+                INDUSTRIAL BRANDS.
               </span>
             </h2>
 
             <p className="text-base sm:text-lg text-steel-300 font-sans leading-relaxed">
-              V. Vidhya Industries is a pump manufacturer based in Coimbatore, Tamil Nadu, with more than three decades of engineering experience.
+              ForgeFlow is a website concept demonstrating how an industrial manufacturer can present products, applications, engineering capabilities and enquiries through a modern digital experience.
             </p>
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-2 self-start lg:self-auto">
             <Badge variant="accent" indicator className="py-1 px-3 text-[11px] font-mono">
-              MANUFACTURING DOSSIER
+              CONCEPT SHOWCASE
             </Badge>
             <span className="font-mono text-[10px] text-steel-500">
-              PEELAMEDU, COIMBATORE
+              DIGITAL ARCHITECTURE
             </span>
           </div>
         </div>
@@ -179,77 +182,77 @@ export const CompanyScaffold: React.FC = () => {
         {/* 2. Main Asymmetric Editorial Split Composition */}
         <div ref={splitRef} className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
           
-          {/* LEFT: Typography Statement, Profile & Location Abstract Map */}
+          {/* LEFT: Typography Statement, Profile & Abstract Blueprint Frame */}
           <div className="lg:col-span-6 flex flex-col justify-between space-y-8">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 font-mono text-xs text-precision-cyan uppercase tracking-widest">
                 <Compass className="w-4 h-4" />
-                <span>ORIGIN & PROFILE</span>
+                <span>AGENCY CONCEPT // DEMO ARCHITECTURE</span>
               </div>
 
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-white uppercase tracking-tight leading-[1.05]">
-                BUILT IN <br />
-                <span className="text-steel-400">COIMBATORE.</span>
+                ENGINEERED FOR <br />
+                <span className="text-steel-400">PRECISION & SCALE.</span>
               </h3>
 
               <p className="text-base sm:text-lg text-steel-200 font-sans leading-relaxed">
-                V. Vidhya Industries develops and manufactures pumping systems for domestic, agricultural and water-handling applications.
+                ForgeFlow is designed as a reusable agency showcase demonstrating modern web standards for manufacturers, engineering firms, and technical B2B companies.
               </p>
 
               <p className="text-sm sm:text-base text-steel-400 font-sans leading-relaxed pt-2 border-t border-graphite-850">
-                With a focus on pumping systems and engineering, V. Vidhya Industries serves applications across domestic, agricultural and water-related requirements.
+                From fluid Lenis smooth scrolling and robust GSAP animations to responsive data architectures, it proves how industrial websites can feel state-of-the-art while remaining highly functional.
               </p>
             </div>
 
-            {/* Abstract Geographic Blueprint Visual */}
+            {/* Abstract Platform Blueprint Visual */}
             <div className="rounded-sm border border-steel-700/60 bg-graphite-900 p-6 precision-corner space-y-4">
               <div className="flex items-center justify-between font-mono text-[11px] text-steel-400 pb-3 border-b border-graphite-800">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-precision-cyan" />
-                  <span className="text-white font-semibold uppercase">COIMBATORE // TAMIL NADU</span>
+                  <span className="text-white font-semibold uppercase">FORGEFLOW PLATFORM</span>
                 </div>
-                <span className="text-steel-500">TAMIL NADU, INDIA</span>
+                <span className="text-steel-500">SHOWCASE ENVIRONMENT</span>
               </div>
 
-              {/* Minimal Geometric Blueprint Map Frame */}
+              {/* Minimal Geometric Blueprint Frame */}
               <div className="relative aspect-[16/6] w-full bg-graphite-950 rounded-sm border border-graphite-850 overflow-hidden flex items-center justify-center p-4">
                 <div className="absolute inset-0 technical-grid opacity-60" />
                 
-                {/* Abstract Vector Geographic Coordinates */}
+                {/* Abstract Vector Coordinates */}
                 <div className="relative z-10 text-center space-y-1 font-mono">
                   <div className="text-xs sm:text-sm font-bold text-white tracking-widest uppercase">
-                    COIMBATORE // TAMIL NADU // INDIA
+                    FORGEFLOW // DIGITAL CONCEPT
                   </div>
                   <div className="text-[10px] text-precision-cyan tracking-wider">
-                    PEELAMEDU
+                    INDUSTRIAL WEBSITE DEMO
                   </div>
                 </div>
 
                 {/* Target Crosshairs */}
-                <div className="absolute top-2 left-2 text-[9px] font-mono text-steel-600">SEC // 06</div>
-                <div className="absolute bottom-2 right-2 text-[9px] font-mono text-steel-600">PIN 641004</div>
+                <div className="absolute top-2 left-2 text-[9px] font-mono text-steel-600">UI // 06</div>
+                <div className="absolute bottom-2 right-2 text-[9px] font-mono text-steel-600">VER // 2.0</div>
               </div>
 
               {/* Demonstration Disclaimer Note */}
               <p className="text-[11px] font-mono text-steel-500 leading-relaxed pt-1">
-                * Company information shown for demonstration and should be confirmed with V. Vidhya Industries before final publication.
+                * Concept website demonstrating digital capabilities for industrial and manufacturing companies.
               </p>
             </div>
           </div>
 
-          {/* RIGHT: Restrained Company Metadata, Address & Contact Path */}
+          {/* RIGHT: Showcase Metadata & Capabilities Path */}
           <div className="lg:col-span-6 flex flex-col justify-between space-y-8 rounded-sm border border-steel-700/80 bg-graphite-900 p-6 sm:p-8 shadow-2xl precision-corner">
             
             {/* Top Dossier Title */}
             <div>
               <div className="flex items-center justify-between font-mono text-xs text-steel-400 pb-4 border-b border-graphite-800 mb-6">
-                <span className="text-precision-cyan font-bold uppercase tracking-widest">[ COMPANY METADATA ]</span>
+                <span className="text-precision-cyan font-bold uppercase tracking-widest">[ SHOWCASE SPECIFICATIONS ]</span>
                 <span className="text-steel-500">DOSSIER / 06</span>
               </div>
 
               {/* 4 Metadata Rows */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {companyMetadata.map((item) => (
+                {conceptMetadata.map((item) => (
                   <div
                     key={item.index}
                     className="p-3.5 rounded-sm bg-graphite-950 border border-graphite-850"
@@ -265,41 +268,39 @@ export const CompanyScaffold: React.FC = () => {
               </div>
             </div>
 
-            {/* Public Factory Address */}
+            {/* Showcase Scope Box */}
             <div className="p-5 rounded-sm bg-graphite-950 border border-graphite-850 space-y-3">
               <div className="flex items-center gap-2 font-mono text-xs text-precision-cyan uppercase tracking-wider">
-                <MapPin className="w-4 h-4 text-precision-cyan shrink-0" />
-                <span>REGISTERED FACILITY LOCATION</span>
+                <ShieldCheck className="w-4 h-4 text-precision-cyan shrink-0" />
+                <span>DESIGNED FOR INDUSTRIAL CAPABILITIES</span>
               </div>
 
-              <address className="not-italic font-mono text-xs sm:text-sm text-steel-200 leading-relaxed space-y-0.5 pl-6">
-                <p className="font-semibold text-white">V. Vidhya Industries</p>
-                <p>6-1 Nehru Street,</p>
-                <p>(opp. Tirupur Textiles),</p>
-                <p>Avinashi Road, Peelamedu,</p>
-                <p>Coimbatore — 641004,</p>
-                <p className="text-steel-400">Tamil Nadu, India</p>
-              </address>
+              <div className="font-mono text-xs sm:text-sm text-steel-200 leading-relaxed space-y-0.5 pl-6">
+                <p className="font-semibold text-white">ForgeFlow Demonstration Platform</p>
+                <p>Industrial Manufacturer & Engineering Showcase</p>
+                <p>Product Catalogues • Guided Selectors • RFQ Workflows</p>
+                <p className="text-steel-400">High-Performance • Accessible • Modern Motion</p>
+              </div>
             </div>
 
-            {/* Contact Channels */}
+            {/* Interactive Test Channels */}
             <div className="pt-4 border-t border-graphite-800 space-y-3">
               <div className="font-mono text-xs text-steel-400 uppercase tracking-widest">
-                DIRECT INQUIRY CHANNELS
+                INTERACTIVE DEMO MODULES
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
                 <a
-                  href="#quote"
+                  href="#products"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToQuote();
+                    scrollToProducts();
                   }}
                   className="p-3 rounded-sm bg-graphite-950 border border-steel-700/60 hover:border-precision-cyan text-steel-300 hover:text-white transition-colors flex items-center justify-between min-h-[44px] focus-visible:outline-2 focus-visible:outline-precision-cyan"
                 >
                   <span className="flex items-center gap-2">
-                    <Mail className="w-3.5 h-3.5 text-precision-cyan" />
-                    <span>FACTORY ENQUIRY</span>
+                    <Layers className="w-3.5 h-3.5 text-precision-cyan" />
+                    <span>SAMPLE CATALOGUE</span>
                   </span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </a>
@@ -313,8 +314,8 @@ export const CompanyScaffold: React.FC = () => {
                   className="p-3 rounded-sm bg-graphite-950 border border-steel-700/60 hover:border-precision-cyan text-steel-300 hover:text-white transition-colors flex items-center justify-between min-h-[44px] focus-visible:outline-2 focus-visible:outline-precision-cyan"
                 >
                   <span className="flex items-center gap-2">
-                    <Phone className="w-3.5 h-3.5 text-precision-cyan" />
-                    <span>REQUEST SPECS</span>
+                    <Sparkles className="w-3.5 h-3.5 text-precision-cyan" />
+                    <span>DEMO RFQ FLOW</span>
                   </span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </a>
@@ -325,25 +326,25 @@ export const CompanyScaffold: React.FC = () => {
 
         </div>
 
-        {/* 3. Quiet Trust Signals (3 signals only) */}
+        {/* 3. Showcase Pillars */}
         <div ref={trustRef} className="space-y-6 pt-6 border-t border-graphite-850">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
               <div className="font-mono text-xs text-precision-cyan uppercase tracking-widest mb-2">
-                MANUFACTURING PILLARS
+                CORE SHOWCASE PILLARS
               </div>
               <h3 className="text-2xl sm:text-4xl font-bold font-display text-white uppercase tracking-tight">
-                PROVEN ENGINEERING INTEGRITY.
+                DEMONSTRATED CAPABILITIES.
               </h3>
             </div>
 
             <p className="text-xs sm:text-sm font-sans text-steel-400 max-w-md leading-relaxed">
-              Established manufacturing standards rooted in three decades of industrial water equipment production in Coimbatore.
+              Key functional modules designed to convert technical buyers and showcase manufacturing depth.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {trustSignals.map((signal) => {
+            {conceptPillars.map((signal) => {
               const Icon = signal.icon;
               return (
                 <div
@@ -371,7 +372,7 @@ export const CompanyScaffold: React.FC = () => {
 
                   <div className="pt-4 border-t border-graphite-850 mt-6 flex items-center gap-2 text-[10px] font-mono text-steel-500">
                     <ShieldCheck className="w-3.5 h-3.5 text-precision-cyan" />
-                    <span>VERIFIED COMPANY PILLAR</span>
+                    <span>FORGEFLOW CONCEPT // SHOWCASE PILLAR</span>
                   </div>
                 </div>
               );
@@ -379,17 +380,17 @@ export const CompanyScaffold: React.FC = () => {
           </div>
         </div>
 
-        {/* 4. Strong Final Transition to Quote / Technical Inquiries */}
+        {/* 4. Strong Final Transition to Quote / Demo Inquiries */}
         <div className="rounded-sm border border-dashed border-steel-700/80 bg-graphite-900/60 p-5 sm:p-7 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="space-y-1">
             <div className="font-mono text-xs text-precision-cyan uppercase tracking-widest">
               NEXT STEP
             </div>
             <h4 className="text-xl sm:text-2xl font-bold font-display text-white uppercase tracking-tight">
-              READY TO DISCUSS YOUR REQUIREMENT?
+              READY TO EXPLORE THE DEMO?
             </h4>
             <p className="text-xs sm:text-sm text-steel-300 font-sans max-w-xl leading-relaxed">
-              Connect directly with the Coimbatore engineering team for pump system inquiries, product availability, or technical datasheets.
+              Test the interactive Pump Finder, browse the sample product families, or try the demo RFQ enquiry flow.
             </p>
           </div>
 
@@ -399,9 +400,9 @@ export const CompanyScaffold: React.FC = () => {
             onClick={scrollToQuote}
             icon={<ArrowUpRight className="w-4 h-4" />}
             className="w-full md:w-auto shrink-0 justify-center"
-            aria-label="Request a Quote"
+            aria-label="Try Sample RFQ"
           >
-            REQUEST A QUOTE
+            TRY SAMPLE RFQ
           </Button>
         </div>
 

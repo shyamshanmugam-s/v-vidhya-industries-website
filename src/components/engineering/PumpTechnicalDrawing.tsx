@@ -18,7 +18,7 @@ export const PumpTechnicalDrawing: React.FC<{ className?: string }> = ({ classNa
       </div>
 
       <div className="absolute top-3 right-4 font-mono text-[10px] text-steel-600 hidden sm:block">
-        ENGINEERING / HYDRAULIC GEOMETRY
+        FORGEFLOW // HYDRAULIC GEOMETRY
       </div>
 
       {/* Abstract Engineering Vector Line-Art */}
@@ -101,7 +101,7 @@ export const PumpTechnicalDrawing: React.FC<{ className?: string }> = ({ classNa
       </div>
 
       <div className="absolute bottom-3 right-4 font-mono text-[10px] text-steel-600 hidden sm:block">
-        COIMBATORE, TAMIL NADU
+        FORGEFLOW CONCEPT // INDUSTRIAL DEMO
       </div>
     </div>
   );

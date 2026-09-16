@@ -217,7 +217,7 @@ export const HeroShell: React.FC = () => {
       id="hero"
       ref={heroRef}
       className="relative min-h-[calc(100svh-4.5rem)] lg:min-h-[calc(100svh-5.5rem)] flex flex-col justify-between overflow-hidden border-b border-graphite-800 technical-grid bg-graphite-950"
-      aria-label="V. Vidhya Industries — Engineered For Flow"
+      aria-label="ForgeFlow — Engineered For Flow"
     >
       {/* Precision Radial Ambient Lighting */}
       <div
@@ -240,10 +240,10 @@ export const HeroShell: React.FC = () => {
             {/* Top Eyebrow & Metadata Identification */}
             <div ref={eyebrowRef} className="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
               <Badge variant="accent" indicator className="py-1 px-3 text-[11px] font-mono tracking-wider">
-                V. VIDHYA INDUSTRIES / COIMBATORE, INDIA
+                FORGEFLOW // INDUSTRIAL WEBSITE DEMO
               </Badge>
               <span className="hidden sm:inline-flex items-center text-[10px] font-mono text-steel-500 tracking-widest uppercase">
-                [ 01 // PUMP SYSTEMS ]
+                [ 01 // DIGITAL CONCEPT ]
               </span>
             </div>
 
@@ -269,7 +269,7 @@ export const HeroShell: React.FC = () => {
               ref={copyRef}
               className="text-base sm:text-lg lg:text-xl text-steel-300 max-w-xl mb-8 sm:mb-10 font-sans leading-relaxed font-normal"
             >
-              Engineered pumping solutions for domestic, agricultural and industrial water applications.
+              Premium digital experiences for industrial manufacturers, engineering companies and technical businesses.
             </p>
 
             {/* Dual CTAs */}
@@ -309,21 +309,21 @@ export const HeroShell: React.FC = () => {
                   <Shield className="w-3 h-3 text-precision-cyan" />
                   CATEGORY
                 </span>
-                <span className="text-steel-200 font-medium tracking-wide mt-0.5">PUMP SYSTEMS</span>
+                <span className="text-steel-200 font-medium tracking-wide mt-0.5">DIGITAL SHOWCASE</span>
               </div>
               <div className="flex flex-col border-l border-graphite-850 pl-2 sm:pl-4">
                 <span className="text-[10px] text-steel-600 flex items-center gap-1">
                   <Cpu className="w-3 h-3 text-precision-cyan" />
-                  ORIGIN
+                  DISCIPLINE
                 </span>
-                <span className="text-steel-200 font-medium tracking-wide mt-0.5">COIMBATORE</span>
+                <span className="text-steel-200 font-medium tracking-wide mt-0.5">ENGINEERING UX</span>
               </div>
               <div className="flex flex-col border-l border-graphite-850 pl-2 sm:pl-4">
                 <span className="text-[10px] text-steel-600 flex items-center gap-1">
                   <Activity className="w-3 h-3 text-precision-cyan" />
-                  DISCIPLINE
+                  SCOPE
                 </span>
-                <span className="text-steel-200 font-medium tracking-wide mt-0.5">ENGINEERING</span>
+                <span className="text-steel-200 font-medium tracking-wide mt-0.5">DEMO CONCEPT</span>
               </div>
             </div>
 
@@ -343,12 +343,12 @@ export const HeroShell: React.FC = () => {
               <div className="flex items-center justify-between px-4 py-2 bg-graphite-950/90 border-b border-graphite-800/80 font-mono text-[10px] text-steel-500">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-precision-cyan animate-pulse" />
-                  <span className="text-steel-300 uppercase tracking-wider">FIG. 01 — INDUSTRIAL CENTRIFUGAL ASSEMBLY</span>
+                  <span className="text-steel-300 uppercase tracking-wider">FIG. 01 — SAMPLE INDUSTRIAL ASSEMBLY</span>
                 </div>
                 <div className="hidden sm:flex items-center gap-3 text-steel-600">
                   <span>SCALE 1:1</span>
                   <span>|</span>
-                  <span>COIMBATORE, TN</span>
+                  <span>CONCEPT VISUAL</span>
                 </div>
               </div>
 
@@ -356,7 +356,7 @@ export const HeroShell: React.FC = () => {
               <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[16/12] w-full bg-graphite-950 overflow-hidden">
                 <img
                   src={heroPumpImg}
-                  alt="V. Vidhya Industries industrial centrifugal pump assembly"
+                  alt="ForgeFlow sample industrial pump assembly visual demonstration"
                   className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
                   fetchPriority="high"
                   loading="eager"
@@ -371,10 +371,10 @@ export const HeroShell: React.FC = () => {
 
                 {/* Technical Blueprint Corner Labels */}
                 <div className="absolute top-3 left-3 font-mono text-[9px] text-steel-500 tracking-widest bg-graphite-950/80 backdrop-blur-xs px-2 py-0.5 border border-graphite-800 rounded-xs pointer-events-none">
-                  PUMP ASSEMBLY
+                  SAMPLE ASSEMBLY
                 </div>
                 <div className="absolute bottom-3 right-3 font-mono text-[9px] text-steel-500 tracking-widest bg-graphite-950/80 backdrop-blur-xs px-2 py-0.5 border border-graphite-800 rounded-xs pointer-events-none">
-                  COIMBATORE, TN
+                  DEMO VISUAL
                 </div>
               </div>
 
@@ -382,9 +382,9 @@ export const HeroShell: React.FC = () => {
               <div className="px-4 py-2.5 bg-graphite-950/95 border-t border-graphite-800/90 flex items-center justify-between font-mono text-[11px]">
                 <div className="flex items-center gap-2">
                   <span className="text-precision-cyan">●</span>
-                  <span className="text-steel-300 text-xs">PUMP SYSTEMS // COIMBATORE</span>
+                  <span className="text-steel-300 text-xs">FORGEFLOW // INDUSTRIAL DEMO</span>
                 </div>
-                <span className="text-[10px] text-steel-600 hidden sm:inline">TAMIL NADU, INDIA</span>
+                <span className="text-[10px] text-steel-600 hidden sm:inline">CONCEPT SHOWCASE</span>
               </div>
             </div>
           </div>
@@ -400,7 +400,7 @@ export const HeroShell: React.FC = () => {
         <div className="hidden md:flex items-center gap-3">
           <span className="text-steel-600">01</span>
           <span className="w-6 h-px bg-graphite-800" />
-          <span className="text-steel-400 uppercase tracking-widest">PUMP SYSTEMS ARCHITECTURE</span>
+          <span className="text-steel-400 uppercase tracking-widest">INDUSTRIAL WEBSITE ARCHITECTURE</span>
         </div>
 
         <button
@@ -415,7 +415,7 @@ export const HeroShell: React.FC = () => {
         </button>
 
         <div className="hidden md:flex items-center gap-2 text-[10px] text-steel-600">
-          <span>COIMBATORE MANUFACTURING BASE</span>
+          <span>CONCEPT DEMO SHOWCASE</span>
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ const productFamilies: ProductFamilyItem[] = [
     description: "Pump systems designed for applications where self-priming operation is required.",
     applicationScope: "Domestic water supply, overhead tanks, utility transfer.",
     image: selfPrimingImg,
-    imageAlt: "V. Vidhya Industries Self Priming Pump system with cast iron housing and precision motor",
+    imageAlt: "ForgeFlow sample Self Priming Pump system with cast iron housing and precision motor",
   },
   {
     id: "centrifugal-monoblock-pumps",
@@ -30,7 +30,7 @@ const productFamilies: ProductFamilyItem[] = [
     description: "Compact pump systems for a range of domestic, agricultural and water-handling applications.",
     applicationScope: "Agricultural irrigation, industrial circulation, water transfer.",
     image: centrifugalMonoblockImg,
-    imageAlt: "V. Vidhya Industries Centrifugal Monoblock Pump with flanged ports and heavy motor assembly",
+    imageAlt: "ForgeFlow sample Centrifugal Monoblock Pump with flanged ports and heavy motor assembly",
   },
   {
     id: "horizontal-open-well-pumps",
@@ -40,7 +40,7 @@ const productFamilies: ProductFamilyItem[] = [
     description: "Pump systems designed for horizontal open well water applications.",
     applicationScope: "Open wells, sumps, irrigation canals, water transfer.",
     image: horizontalOpenwellImg,
-    imageAlt: "V. Vidhya Industries Horizontal Open Well Submersible Pump with water-cooled motor body",
+    imageAlt: "ForgeFlow sample Horizontal Open Well Submersible Pump with water-cooled motor body",
   },
   {
     id: "domestic-pressure-boosting-systems",
@@ -50,7 +50,7 @@ const productFamilies: ProductFamilyItem[] = [
     description: "Pressure boosting solutions designed for domestic water applications.",
     applicationScope: "Multi-story domestic water networks, pressure-boosting lines.",
     image: pressureBoostingImg,
-    imageAlt: "V. Vidhya Industries Domestic Pressure Boosting System with pressure tank and automated controller",
+    imageAlt: "ForgeFlow sample Domestic Pressure Boosting System with pressure tank and automated controller",
   },
   {
     id: "stainless-steel-submersible-pumpsets",
@@ -60,7 +60,7 @@ const productFamilies: ProductFamilyItem[] = [
     description: "Stainless steel submersible pumping systems for suitable water applications.",
     applicationScope: "Submersible water applications, groundwater extraction.",
     image: ssSubmersibleImg,
-    imageAlt: "V. Vidhya Industries Stainless Steel Submersible Pumpset with multi-stage hydraulic bowls",
+    imageAlt: "ForgeFlow sample Stainless Steel Submersible Pumpset with multi-stage hydraulic bowls",
   },
 ];
 
@@ -134,7 +134,7 @@ export const ProductSystemsScaffold: React.FC = () => {
       id="products"
       ref={sectionRef}
       className="relative py-12 sm:py-16 border-b border-graphite-800 bg-graphite-950 technical-grid"
-      aria-label="V. Vidhya Industries Pumping Systems"
+      aria-label="ForgeFlow Sample Pumping Systems"
     >
       {/* Background radial accent */}
       <div
@@ -152,7 +152,7 @@ export const ProductSystemsScaffold: React.FC = () => {
               </span>
               <span className="text-graphite-800">/</span>
               <span className="font-mono text-xs text-steel-500 tracking-widest uppercase">
-                PUMPING SYSTEMS
+                SAMPLE CATALOGUE
               </span>
             </div>
 
@@ -161,16 +161,16 @@ export const ProductSystemsScaffold: React.FC = () => {
             </h2>
 
             <p className="text-base sm:text-lg text-steel-300 font-sans leading-relaxed">
-              Explore the pump families offered by V. Vidhya Industries.
+              Explore sample pump families demonstrating product categorization, technical positioning and modal specification workflows.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end gap-2 self-start lg:self-auto">
             <Badge variant="accent" indicator className="py-1 px-3 text-[11px] font-mono">
-              5 VERIFIED PRODUCT FAMILIES
+              5 SAMPLE PRODUCT FAMILIES
             </Badge>
-            <span className="font-mono text-[10px] text-steel-500">
-              COIMBATORE // TAMIL NADU
+            <span className="font-mono text-[10px] text-steel-500 uppercase">
+              SAMPLE CATALOGUE // INDUSTRIAL DEMO
             </span>
           </div>
         </div>
@@ -193,7 +193,7 @@ export const ProductSystemsScaffold: React.FC = () => {
                       {product.category}
                     </span>
                   </div>
-                  <span className="text-[10px] text-steel-600 hidden sm:inline">COIMBATORE, TN</span>
+                  <span className="text-[10px] text-steel-600 hidden sm:inline">SAMPLE PRODUCT</span>
                 </div>
 
                 {/* Product Image Stage */}
@@ -220,7 +220,7 @@ export const ProductSystemsScaffold: React.FC = () => {
                   </button>
 
                   <div className="absolute bottom-3 left-3 bg-graphite-950/90 backdrop-blur-xs px-2.5 py-1 border border-graphite-800 rounded-xs font-mono text-[10px] text-steel-400">
-                    FIG. {product.index} // PRODUCT FAMILY
+                    FIG. {product.index} // SAMPLE FAMILY
                   </div>
                 </div>
 
@@ -364,10 +364,10 @@ export const ProductSystemsScaffold: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-display text-base sm:text-lg font-bold text-white uppercase tracking-tight">
-                  LOOKING FOR SPECIFICATIONS OR PRODUCT INFORMATION?
+                  EXPLORING DIGITAL CATALOGUES FOR YOUR INDUSTRIAL BRAND?
                 </h4>
                 <p className="text-xs sm:text-sm text-steel-400 font-sans mt-1">
-                  Connect directly with the Coimbatore team for product availability, datasheets, or commercial enquiries.
+                  Connect with our team to discuss custom website design, product catalogues, and interactive lead-generation experiences for manufacturing companies.
                 </p>
               </div>
             </div>

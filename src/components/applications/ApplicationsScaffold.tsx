@@ -206,7 +206,7 @@ export const ApplicationsScaffold: React.FC = () => {
       id="applications"
       ref={sectionRef}
       className="relative py-12 sm:py-16 border-b border-graphite-800 bg-graphite-950 technical-grid"
-      aria-label="V. Vidhya Industries Application Map"
+      aria-label="ForgeFlow Sample Application Map"
     >
       {/* Background Ambience */}
       <div
@@ -237,16 +237,16 @@ export const ApplicationsScaffold: React.FC = () => {
             </h2>
 
             <p className="text-base sm:text-lg text-steel-300 font-sans leading-relaxed">
-              Explore the environments and applications where pumping systems become part of everyday water infrastructure.
+              Explore sample environments and applications demonstrating how industrial products map to operating requirements.
             </p>
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-2 self-start lg:self-auto">
             <Badge variant="accent" indicator className="py-1 px-3 text-[11px] font-mono">
-              6 CORE APPLICATION DOMAINS
+              6 SAMPLE APPLICATION DOMAINS
             </Badge>
             <span className="font-mono text-[10px] text-steel-500">
-              PUMP APPLICATION MAP
+              SAMPLE APPLICATION MAP
             </span>
           </div>
         </div>
@@ -415,7 +415,7 @@ export const ApplicationsScaffold: React.FC = () => {
             <div className="p-4 rounded-sm bg-graphite-950 border border-graphite-850 font-mono text-[11px] text-steel-400 flex items-start gap-2.5 mt-4">
               <ShieldAlert className="w-4 h-4 text-steel-500 shrink-0 mt-0.5" />
               <span>
-                Pumping equipment manufactured in Coimbatore for domestic, agricultural, and industrial applications.
+                Sample application mapping demonstrating how industrial equipment can be matched to diverse operating environments.
               </span>
             </div>
           </div>

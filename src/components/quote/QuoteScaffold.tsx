@@ -162,8 +162,10 @@ export const QuoteScaffold: React.FC = () => {
       }
     };
 
+    window.addEventListener("forgeflow-prefill-quote", handlePrefill);
     window.addEventListener("vidhya-prefill-quote", handlePrefill);
     return () => {
+      window.removeEventListener("forgeflow-prefill-quote", handlePrefill);
       window.removeEventListener("vidhya-prefill-quote", handlePrefill);
     };
   }, []);
@@ -314,7 +316,7 @@ export const QuoteScaffold: React.FC = () => {
       id="quote"
       ref={sectionRef}
       className="relative py-12 sm:py-16 border-b border-graphite-800 bg-graphite-950 technical-grid"
-      aria-label="Request a Quote and Technical Inquiry"
+      aria-label="Request a Sample Quote - Demo Enquiry Flow"
     >
       {/* Background Ambience */}
       <div
@@ -336,28 +338,28 @@ export const QuoteScaffold: React.FC = () => {
               </span>
               <span className="text-graphite-800">/</span>
               <span className="font-mono text-xs text-steel-500 tracking-widest uppercase">
-                REQUEST A QUOTE
+                DEMO RFQ
               </span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white uppercase leading-[1.02] mb-4">
-              LET'S DISCUSS <br />
+              REQUEST A <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-steel-200 to-steel-400">
-                YOUR REQUIREMENT.
+                SAMPLE QUOTE.
               </span>
             </h2>
 
             <p className="text-base sm:text-lg text-steel-300 font-sans leading-relaxed">
-              Share your application and requirements for a product enquiry.
+              Experience a high-conversion industrial enquiry flow designed for technical manufacturers and buyers.
             </p>
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-2 self-start lg:self-auto font-mono">
             <Badge variant="accent" indicator className="py-1 px-3 text-[11px]">
-              TECHNICAL ENQUIRY
+              DEMO ENQUIRY FLOW
             </Badge>
             <span className="text-[10px] text-steel-500 tracking-wider">
-              DIRECT INQUIRY // COIMBATORE
+              SAMPLE LEAD GENERATION
             </span>
           </div>
         </div>
@@ -370,49 +372,43 @@ export const QuoteScaffold: React.FC = () => {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 font-mono text-xs text-precision-cyan uppercase tracking-widest">
                 <FileText className="w-4 h-4" />
-                <span>COMMERCIAL & TECHNICAL RFQ</span>
+                <span>SAMPLE LEAD GENERATION</span>
               </div>
 
               <h3 className="text-3xl sm:text-4xl font-extrabold font-display text-white uppercase tracking-tight leading-[1.08]">
-                FROM APPLICATION <br />
+                FROM SPECIFICATION <br />
                 <span className="text-steel-400">TO ENQUIRY.</span>
               </h3>
 
               <p className="text-base text-steel-300 font-sans leading-relaxed">
-                Share your application and requirements for a product enquiry.
+                This interactive form demonstrates how technical buyers can specify application requirements, select product families, and submit detailed RFQs.
               </p>
             </div>
 
-            {/* Verified Manufacturer Location Block */}
+            {/* Demo Platform Scope Block */}
             <div className="p-6 rounded-sm bg-graphite-900 border border-steel-700/60 precision-corner space-y-4 shadow-xl">
               <div className="flex items-center justify-between font-mono text-xs text-steel-400 pb-3 border-b border-graphite-800">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-precision-cyan" />
-                  <span className="text-white font-semibold uppercase">V. VIDHYA INDUSTRIES</span>
+                  <span className="text-white font-semibold uppercase">FORGEFLOW DEMO PLATFORM</span>
                 </div>
-                <span className="text-steel-500 font-mono text-[11px]">COIMBATORE</span>
+                <span className="text-steel-500 font-mono text-[11px]">CONCEPT DEMO</span>
               </div>
 
               <div className="flex items-start gap-3 pt-1">
                 <MapPin className="w-4 h-4 text-precision-cyan shrink-0 mt-1" />
-                <div className="space-y-1">
-                  <div className="font-mono text-xs text-steel-400 uppercase tracking-wide">
-                    COIMBATORE, TAMIL NADU
-                  </div>
-                  <address className="not-italic font-mono text-xs sm:text-sm text-steel-200 leading-relaxed">
-                    <p className="font-semibold text-white">V. Vidhya Industries</p>
-                    <p>6-1 Nehru Street,</p>
-                    <p>(opp. Tirupur Textiles),</p>
-                    <p>Avinashi Road, Peelamedu,</p>
-                    <p>Coimbatore — 641004,</p>
-                    <p className="text-steel-400">Tamil Nadu, India</p>
-                  </address>
+                <div className="space-y-1 font-mono text-xs sm:text-sm text-steel-200 leading-relaxed">
+                  <p className="font-semibold text-white">ForgeFlow Demonstration Environment</p>
+                  <p className="text-steel-400">Industrial Digital Experience Prototype</p>
+                  <p className="text-steel-400 text-xs pt-1">
+                    Simulated enquiry capture for prospective industrial clients. No live manufacturing orders are processed.
+                  </p>
                 </div>
               </div>
 
               <div className="pt-3 border-t border-graphite-800 flex items-center justify-between text-[11px] font-mono text-steel-500">
-                <span>MANUFACTURING FACILITY</span>
-                <span className="text-precision-cyan">PEELAMEDU</span>
+                <span>DEMO ENVIRONMENT</span>
+                <span className="text-precision-cyan">CONCEPT PROTOTYPE</span>
               </div>
             </div>
 
@@ -423,7 +419,7 @@ export const QuoteScaffold: React.FC = () => {
                 <span>TECHNICAL GUIDANCE</span>
               </div>
               <p className="text-xs sm:text-sm font-sans text-steel-300 leading-relaxed">
-                Provide as much context on your source, installation depth, or operating conditions as possible. Technical datasheets and system drawings are provided upon requirement review.
+                Provide as much context on your source, installation depth, or operating conditions as possible. Technical datasheets and system drawings are captured as part of the enquiry flow.
               </p>
             </div>
 
@@ -431,7 +427,7 @@ export const QuoteScaffold: React.FC = () => {
             <div className="p-4 rounded-sm bg-graphite-950 border border-graphite-850 flex items-start gap-2.5">
               <ShieldCheck className="w-4 h-4 text-precision-cyan shrink-0 mt-0.5" />
               <p className="font-mono text-[11px] text-steel-500 leading-relaxed">
-                Details provided will be used exclusively to assess your requirement and respond to your enquiry.
+                This is a demonstration interaction. Captured form submissions are simulated locally in-browser for showcase purposes.
               </p>
             </div>
           </div>
@@ -458,21 +454,21 @@ export const QuoteScaffold: React.FC = () => {
                   </div>
 
                   <h3 className="text-2xl sm:text-3xl font-bold font-display text-white uppercase tracking-tight">
-                    ENQUIRY READY
+                    DEMO ENQUIRY CAPTURED
                   </h3>
 
                   <p className="text-base text-steel-200 font-sans leading-relaxed">
-                    Your enquiry details have been captured in this demo.
+                    Your demonstration enquiry details have been captured successfully.
                   </p>
                 </div>
 
                 {/* Client Integration Callout Notice */}
                 <div className="p-4 rounded-sm bg-graphite-950 border border-precision-cyan/30 text-xs font-mono text-steel-300 space-y-1.5">
                   <div className="text-precision-cyan font-bold uppercase tracking-wider">
-                    [ CLIENT INTEGRATION NOTICE ]
+                    [ SHOWCASE NOTICE ]
                   </div>
                   <p className="text-steel-400 leading-relaxed">
-                    To connect this form to V. Vidhya Industries, configure the production enquiry endpoint/email workflow before launch.
+                    In a production deployment, this enquiry flow connects directly to your ERP, CRM, or sales engineering inbox with automated notification routing.
                   </p>
                 </div>
 
@@ -550,9 +546,9 @@ export const QuoteScaffold: React.FC = () => {
                     onClick={handleReset}
                     icon={<RotateCcw className="w-4 h-4" />}
                     className="w-full sm:w-auto"
-                    aria-label="Start another enquiry"
+                    aria-label="Start another demo enquiry"
                   >
-                    START ANOTHER ENQUIRY
+                    START ANOTHER DEMO ENQUIRY
                   </Button>
                 </div>
               </div>
@@ -567,11 +563,11 @@ export const QuoteScaffold: React.FC = () => {
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-precision-cyan animate-pulse" />
                     <span className="text-white font-bold uppercase tracking-widest">
-                      RFQ / 07 — SPECIFICATION FORM
+                      DEMO RFQ // SPECIFICATION FORM
                     </span>
                   </div>
                   <span className="text-steel-500 text-[10px] hidden sm:inline">
-                    V. VIDHYA INDUSTRIES
+                    FORGEFLOW INDUSTRIAL DEMO
                   </span>
                 </div>
 
@@ -995,9 +991,9 @@ export const QuoteScaffold: React.FC = () => {
                       disabled={isSubmitting}
                       icon={<ArrowUpRight className="w-4 h-4" />}
                       className="justify-center min-h-[48px]"
-                      aria-label="Submit quotation request"
+                      aria-label="Submit demo quotation request"
                     >
-                      {isSubmitting ? "PROCESSING ENQUIRY..." : "REQUEST A QUOTE →"}
+                      {isSubmitting ? "PROCESSING DEMO ENQUIRY..." : "SUBMIT DEMO RFQ →"}
                     </Button>
                   </div>
                 </form>

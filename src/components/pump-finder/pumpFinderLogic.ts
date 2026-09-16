@@ -73,7 +73,7 @@ export const allVerifiedFamilies: Record<string, ProductFamilyItem> = {
     description: "Pump systems designed for applications where self-priming operation is required.",
     applicationScope: "Domestic water supply, overhead tanks, utility transfer.",
     image: selfPrimingImg,
-    imageAlt: "V. Vidhya Industries Self Priming Pump system with cast iron housing and precision motor",
+    imageAlt: "ForgeFlow sample Self Priming Pump system with cast iron housing and precision motor",
   },
   "centrifugal-monoblock-pumps": {
     id: "centrifugal-monoblock-pumps",
@@ -83,7 +83,7 @@ export const allVerifiedFamilies: Record<string, ProductFamilyItem> = {
     description: "Compact pump systems for a range of domestic, agricultural and water-handling applications.",
     applicationScope: "Agricultural irrigation, industrial circulation, water transfer.",
     image: centrifugalMonoblockImg,
-    imageAlt: "V. Vidhya Industries Centrifugal Monoblock Pump with flanged ports and heavy motor assembly",
+    imageAlt: "ForgeFlow sample Centrifugal Monoblock Pump with flanged ports and heavy motor assembly",
   },
   "horizontal-open-well-pumps": {
     id: "horizontal-open-well-pumps",
@@ -93,7 +93,7 @@ export const allVerifiedFamilies: Record<string, ProductFamilyItem> = {
     description: "Pump systems designed for horizontal open well water applications.",
     applicationScope: "Open wells, sumps, irrigation canals, water transfer.",
     image: horizontalOpenwellImg,
-    imageAlt: "V. Vidhya Industries Horizontal Open Well Submersible Pump with water-cooled motor body",
+    imageAlt: "ForgeFlow sample Horizontal Open Well Submersible Pump with water-cooled motor body",
   },
   "domestic-pressure-boosting-systems": {
     id: "domestic-pressure-boosting-systems",
@@ -103,7 +103,7 @@ export const allVerifiedFamilies: Record<string, ProductFamilyItem> = {
     description: "Pressure boosting solutions designed for domestic water applications.",
     applicationScope: "Multi-story domestic water networks, pressure-boosting lines.",
     image: pressureBoostingImg,
-    imageAlt: "V. Vidhya Industries Domestic Pressure Boosting System with pressure tank and automated controller",
+    imageAlt: "ForgeFlow sample Domestic Pressure Boosting System with pressure tank and automated controller",
   },
   "stainless-steel-submersible-pumpsets": {
     id: "stainless-steel-submersible-pumpsets",
@@ -113,7 +113,7 @@ export const allVerifiedFamilies: Record<string, ProductFamilyItem> = {
     description: "Stainless steel submersible pumping systems for suitable water applications.",
     applicationScope: "Submersible water applications, groundwater extraction.",
     image: ssSubmersibleImg,
-    imageAlt: "V. Vidhya Industries Stainless Steel Submersible Pumpset with multi-stage hydraulic bowls",
+    imageAlt: "ForgeFlow sample Stainless Steel Submersible Pumpset with multi-stage hydraulic bowls",
   },
 };
 

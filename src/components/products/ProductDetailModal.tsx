@@ -100,7 +100,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             />
             <div className="absolute inset-0 industrial-vignette pointer-events-none" />
             <div className="absolute top-3 left-3 bg-graphite-950/90 backdrop-blur-xs px-2.5 py-1 border border-graphite-800 rounded-xs font-mono text-[10px] text-steel-400">
-              V. VIDHYA INDUSTRIES // COIMBATORE
+              FORGEFLOW // INDUSTRIAL DEMO
             </div>
             <div className="absolute bottom-3 right-3 bg-graphite-950/90 backdrop-blur-xs px-2.5 py-1 border border-graphite-800 rounded-xs font-mono text-[10px] text-precision-cyan">
               FIG. {product.index}
@@ -111,10 +111,10 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           <div>
             <div className="flex items-center gap-2 mb-2">
               <Badge variant="accent" indicator>
-                VERIFIED PRODUCT FAMILY
+                SAMPLE PRODUCT FAMILY
               </Badge>
               <span className="font-mono text-xs text-steel-500 uppercase">
-                COIMBATORE, TAMIL NADU
+                CONCEPT DEMO
               </span>
             </div>
             <h2

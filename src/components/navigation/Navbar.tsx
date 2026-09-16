@@ -21,13 +21,13 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-4">
           <span className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-precision-cyan animate-pulse" />
-            <span className="text-steel-400">PUMP ENGINEERING BASE:</span> COIMBATORE, TAMIL NADU
+            <span className="text-steel-400">DIGITAL SHOWCASE:</span> INDUSTRIAL PRECISION
           </span>
           <span className="text-graphite-800">|</span>
-          <span>COIMBATORE, TAMIL NADU</span>
+          <span>CONCEPT WEBSITE DEMO</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-steel-400">PUMP SYSTEMS // COIMBATORE</span>
+          <span className="text-steel-400">PRODUCT ARCHITECTURE // DEMO</span>
           <span className="text-graphite-800">|</span>
           <Badge variant="accent" indicator className="py-0.5 px-2 text-[10px]">
             DEMO PREVIEW
@@ -38,17 +38,17 @@ export const Navbar: React.FC = () => {
       {/* Main Navigation Bar */}
       <div className="container flex items-center justify-between h-16 sm:h-18">
         {/* Brand Logo & Identification */}
-        <a href="#" className="flex flex-col group" aria-label="V. Vidhya Industries Home">
+        <a href="#" className="flex flex-col group" aria-label="ForgeFlow Industrial Website Demo Home">
           <div className="flex items-center gap-2.5">
             <div className="w-7 h-7 rounded-sm bg-graphite-850 border border-steel-700/60 flex items-center justify-center text-precision-cyan font-mono text-xs font-bold group-hover:border-precision-cyan/60 transition-colors">
-              V
+              F
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold tracking-tight text-base sm:text-lg text-white group-hover:text-steel-100 transition-colors leading-none">
-                V. VIDHYA INDUSTRIES
+                FORGEFLOW
               </span>
               <span className="text-[10px] font-mono tracking-widest text-steel-500 uppercase mt-1">
-                Coimbatore, India
+                Industrial Website Demo
               </span>
             </div>
           </div>
